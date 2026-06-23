@@ -36,3 +36,4 @@ That means OpsAgent Core remains useful even without paid AI.
 - Gitea/GitHub issues
 - BookStack pages
 - Nextcloud archive uploads
+

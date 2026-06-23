@@ -18,3 +18,4 @@ I built OpsAgent Core to show practical DevOps/platform engineering skills: cont
 ## Strong claim
 
 It is a working prototype of a safe, model-agnostic AI operations layer.
+

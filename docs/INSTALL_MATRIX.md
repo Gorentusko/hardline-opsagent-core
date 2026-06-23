@@ -13,3 +13,4 @@
 ## Key design decision
 
 OpsAgent Core should be easy to test without a paid AI key. The default mock provider is part of the product, not a fallback hack.
+

@@ -31,3 +31,4 @@ docker compose up --build
 - Do not add automatic remediation without a separate design.
 - Do not commit secrets.
 - Keep reports factual and grounded in collected state.
+

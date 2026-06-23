@@ -1,6 +1,6 @@
 # Hardline OpsAgent Core
 
-![CI](https://github.com/hardlineitgroup/hardline-opsagent-core/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Gorentusko/hardline-opsagent-core/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![Docker](https://img.shields.io/badge/docker-compose-blue)
 ![AI](https://img.shields.io/badge/AI-mock%20default-green)
@@ -185,3 +185,4 @@ See [`SECURITY.md`](SECURITY.md).
 ## License
 
 MIT License. See [`LICENSE`](LICENSE).
+

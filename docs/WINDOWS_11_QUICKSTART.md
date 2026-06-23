@@ -17,7 +17,7 @@ Docker Desktop may ask to enable WSL 2. Accept that. WSL 2 is the normal Windows
 Open PowerShell:
 
 ```powershell
-git clone https://github.com/hardlineitgroup/hardline-opsagent-core.git
+git clone https://github.com/Gorentusko/hardline-opsagent-core.git
 cd hardline-opsagent-core
 copy .env.example .env
 docker compose up --build
@@ -126,3 +126,4 @@ Use this instead:
 curl.exe http://localhost:8088/health
 curl.exe http://localhost:8088/analyze
 ```
+

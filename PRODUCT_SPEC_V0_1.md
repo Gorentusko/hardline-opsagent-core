@@ -74,3 +74,4 @@ A user can clone the repo, run Docker Compose, call `/analyze`, and receive a cl
 - plugin system
 - signed releases
 - polished UI
+

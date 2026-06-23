@@ -62,3 +62,4 @@ OPSAGENT_LLM_PROVIDER=mock
 ```
 
 This makes no paid calls and requires no API key.
+

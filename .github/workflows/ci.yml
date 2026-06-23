@@ -21,3 +21,4 @@ jobs:
         run: ruff check app tests
       - name: Test
         run: pytest -q
+

@@ -20,7 +20,7 @@ docker compose version
 ## Clone and run
 
 ```bash
-git clone https://github.com/hardlineitgroup/hardline-opsagent-core.git
+git clone https://github.com/Gorentusko/hardline-opsagent-core.git
 cd hardline-opsagent-core
 cp .env.example .env
 docker compose up -d --build
@@ -48,3 +48,4 @@ docker compose down
 - No API key is needed.
 - OpenRouter is optional and BYOK.
 - No automatic remediation is performed.
+
