@@ -11,3 +11,6 @@ data/state/*
 
 # Local environment backups
 .env.backup.*
+
+# Local environment backups
+.env.backup.*
