@@ -1,4 +1,4 @@
-# GitHub Launch Checklist
+﻿# GitHub Launch Checklist
 
 ## Before publishing
 
@@ -33,4 +33,5 @@ homelab
 runbooks
 platform-engineering
 ```
+
 

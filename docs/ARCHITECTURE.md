@@ -1,16 +1,16 @@
-# Architecture
+﻿# Architecture
 
 ```text
 Collectors
-  ↓
+  â†“
 State Snapshot
-  ↓
+  â†“
 Rules Evaluator
-  ↓
+  â†“
 Optional LLM Provider
-  ↓
+  â†“
 Markdown Report + JSON State
-  ↓
+  â†“
 Future Connectors
 ```
 
@@ -36,4 +36,5 @@ That means OpsAgent Core remains useful even without paid AI.
 - Gitea/GitHub issues
 - BookStack pages
 - Nextcloud archive uploads
+
 

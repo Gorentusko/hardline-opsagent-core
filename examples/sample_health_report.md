@@ -1,4 +1,4 @@
-# Hardline OpsAgent Health Report
+﻿# Hardline OpsAgent Health Report
 
 Generated UTC: `2026-06-22T00:00:00Z`
 
@@ -38,4 +38,5 @@ State snapshot: `data/state/latest_state.json`
 ## Dashboard
 
 Generated reports can be listed from `/reports` and opened from the browser dashboard at `/`.
+
 

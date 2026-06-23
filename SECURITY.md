@@ -1,4 +1,4 @@
-# Security Policy
+﻿# Security Policy
 
 ## Supported security posture
 
@@ -37,4 +37,5 @@ Default provider is mock/offline. External providers require explicit user confi
 ## Reporting vulnerabilities
 
 Open an issue or contact the maintainer through the GitHub profile.
+
 

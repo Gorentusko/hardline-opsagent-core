@@ -1,4 +1,4 @@
-# Product Spec: Hardline OpsAgent Core v0.1
+﻿# Product Spec: Hardline OpsAgent Core v0.1
 
 ## Product statement
 
@@ -14,7 +14,7 @@ Make a hiring-manager-testable DevOps/SRE portfolio project that can be deployed
 - Junior-to-mid DevOps/SRE learners
 - Small MSP operators
 - Platform engineering reviewers
-- Hiring managers looking for practical infrastructure automation work
+- technical reviewers looking for practical infrastructure automation work
 
 ## MVP promise
 
@@ -74,4 +74,5 @@ A user can clone the repo, run Docker Compose, call `/analyze`, and receive a cl
 - plugin system
 - signed releases
 - polished UI
+
 

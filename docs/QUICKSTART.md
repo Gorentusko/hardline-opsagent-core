@@ -1,4 +1,4 @@
-# Quickstart: Choose Your Test Path
+﻿# Quickstart: Choose Your Test Path
 
 Hardline OpsAgent Core is designed to be testable from a Windows laptop, a Linux/Mac development machine, or a remote Ubuntu server.
 
@@ -37,4 +37,5 @@ OPENROUTER_API_KEY=your_key_here
 ```
 
 The project does not ship with a maintainer API key.
+
 

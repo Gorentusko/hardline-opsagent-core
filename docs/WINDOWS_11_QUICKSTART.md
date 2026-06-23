@@ -1,4 +1,4 @@
-# Windows 11 Quickstart
+﻿# Windows 11 Quickstart
 
 This path is for reviewers or users testing OpsAgent Core from a normal Windows 11 laptop.
 
@@ -126,4 +126,5 @@ Use this instead:
 curl.exe http://localhost:8088/health
 curl.exe http://localhost:8088/analyze
 ```
+
 

@@ -1,4 +1,4 @@
-name: Feature request
+﻿name: Feature request
 description: Suggest an improvement
 title: "[Feature]: "
 labels: ["enhancement"]
@@ -10,4 +10,5 @@ body:
       description: Describe the feature and why it matters.
     validations:
       required: true
+
 

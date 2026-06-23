@@ -1,4 +1,4 @@
-name: Bug report
+﻿name: Bug report
 description: Report a problem with OpsAgent Core
 title: "[Bug]: "
 labels: ["bug"]
@@ -16,4 +16,5 @@ body:
       label: Logs or output
       description: Paste relevant logs with secrets removed.
       render: shell
+
 

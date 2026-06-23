@@ -1,4 +1,4 @@
-{
+﻿{
   "package": "HARDLINE_OPSAGENT_CORE_PUBLIC_GITHUB_POLISH_V0_1_4",
   "repo": "hardline-opsagent-core",
   "status": "polished_package_created",
@@ -12,7 +12,7 @@
     "docs/QUICKSTART.md",
     "docs/WINDOWS_11_QUICKSTART.md",
     "docs/UBUNTU_SERVER_QUICKSTART.md",
-    "docs/HIRING_MANAGER_REVIEWER_TEST_PLAN.md",
+    "docs/REVIEWER_TEST_PLAN.md",
     "docs/INSTALL_MATRIX.md"
   ],
   "default_ai_mode": "mock_offline",
@@ -42,3 +42,4 @@
   "public_readme_polish": true,
   "openrouter_byok_optional": true
 }
+

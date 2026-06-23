@@ -95,7 +95,7 @@ curl.exe http://localhost:8088/analyze
 More details:
 
 - [`docs/WINDOWS_11_QUICKSTART.md`](docs/WINDOWS_11_QUICKSTART.md)
-- [`docs/HIRING_MANAGER_REVIEWER_TEST_PLAN.md`](docs/HIRING_MANAGER_REVIEWER_TEST_PLAN.md)
+- [`docs/REVIEWER_TEST_PLAN.md`](docs/REVIEWER_TEST_PLAN.md)
 - [`docs/INSTALL_MATRIX.md`](docs/INSTALL_MATRIX.md)
 
 ---
@@ -192,5 +192,6 @@ See [`SECURITY.md`](SECURITY.md).
 ## License
 
 MIT License. See [`LICENSE`](LICENSE).
+
 
 

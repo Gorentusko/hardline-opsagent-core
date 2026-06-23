@@ -1,4 +1,4 @@
-# AI Access Policy
+﻿# AI Access Policy
 
 OpsAgent Core is safe and cost-free by default.
 
@@ -46,4 +46,5 @@ Providers are swappable:
 ## Development rule
 
 No paid AI calls are needed for development, tests, CI, or the default demo.
+
 

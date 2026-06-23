@@ -1,4 +1,4 @@
-# Test Success Criteria
+﻿# Test Success Criteria
 
 A local demo is successful when:
 
@@ -25,4 +25,5 @@ If Docker socket access is unavailable, the app still runs and generates a repor
 ## v0.1.2 improvement
 
 The Docker collector now tries the Docker Engine Unix socket API before falling back to a Docker CLI call.
+
 

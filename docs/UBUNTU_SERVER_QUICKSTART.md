@@ -1,4 +1,4 @@
-# Ubuntu Server Quickstart
+﻿# Ubuntu Server Quickstart
 
 This path is for testing OpsAgent Core on a remote Ubuntu server, lab box, or VPS.
 
@@ -48,4 +48,5 @@ docker compose down
 - No API key is needed.
 - OpenRouter is optional and BYOK.
 - No automatic remediation is performed.
+
 
