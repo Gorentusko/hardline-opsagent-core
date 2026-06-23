@@ -1,0 +1,44 @@
+{
+  "package": "HARDLINE_OPSAGENT_CORE_PUBLIC_GITHUB_POLISH_V0_1_4",
+  "repo": "hardline-opsagent-core",
+  "status": "polished_package_created",
+  "paid_ai_required": false,
+  "default_llm_provider": "mock",
+  "optional_llm_provider": "openrouter_byok",
+  "docker_deployable": true,
+  "public_key_policy": "no maintainer key shipped",
+  "version": "0.1.4",
+  "quickstart_docs": [
+    "docs/QUICKSTART.md",
+    "docs/WINDOWS_11_QUICKSTART.md",
+    "docs/UBUNTU_SERVER_QUICKSTART.md",
+    "docs/HIRING_MANAGER_REVIEWER_TEST_PLAN.md",
+    "docs/INSTALL_MATRIX.md"
+  ],
+  "default_ai_mode": "mock_offline",
+  "byok_openrouter_optional": true,
+  "windows_test_verified_by_user": true,
+  "fixes": [
+    "clean zip root",
+    "PowerShell curl.exe docs",
+    "Docker socket API collector before Docker CLI fallback",
+    "Dockerfile no longer installs docker.io",
+    "test success criteria doc"
+  ],
+  "dashboard": true,
+  "new_endpoints": [
+    "/",
+    "/api",
+    "/reports",
+    "/reports/{name}"
+  ],
+  "github_launch_checklist": true,
+  "portfolio_positioning_doc": true,
+  "public_github_ready": true,
+  "mit_license": true,
+  "gitattributes": true,
+  "dockerignore": true,
+  "favicon_route": true,
+  "public_readme_polish": true,
+  "openrouter_byok_optional": true
+}

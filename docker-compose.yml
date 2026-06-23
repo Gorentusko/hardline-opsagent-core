@@ -1,0 +1,19 @@
+services:
+  opsagent-core:
+    build: .
+    container_name: hardline-opsagent-core
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./data:/app/data
+      # Optional: enables Docker container inspection.
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8088/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    read_only: false
