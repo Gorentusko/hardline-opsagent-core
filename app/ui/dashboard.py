@@ -1,9 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
-
-from app.config import settings
-
 
 def dashboard_html() -> str:
     return """<!doctype html>
@@ -99,3 +95,4 @@ loadReports();
 </script>
 </body>
 </html>"""
+

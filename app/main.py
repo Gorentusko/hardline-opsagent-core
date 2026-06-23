@@ -4,7 +4,7 @@ from pathlib import Path
 
 import uvicorn
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 
 from app.collectors.docker import collect_docker_state
 from app.collectors.system import collect_system_state
@@ -101,3 +101,4 @@ def read_report(name: str):
 
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host=settings.bind_host, port=settings.bind_port, reload=False)
+
