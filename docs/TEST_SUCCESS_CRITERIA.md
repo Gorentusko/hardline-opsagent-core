@@ -27,3 +27,4 @@ If Docker socket access is unavailable, the app still runs and generates a repor
 The Docker collector now tries the Docker Engine Unix socket API before falling back to a Docker CLI call.
 
 
+

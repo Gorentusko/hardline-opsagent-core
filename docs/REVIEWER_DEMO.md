@@ -36,3 +36,4 @@ curl -s http://localhost:8088/analyze | jq .
 - no paid AI requirement
 
 
+

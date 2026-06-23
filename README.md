@@ -193,5 +193,9 @@ See [`SECURITY.md`](SECURITY.md).
 
 MIT License. See [`LICENSE`](LICENSE).
 
+## Project Roadmap
 
+- [Reviewer Demo](docs/REVIEWER_DEMO.md)
+- [Reviewer Test Plan](docs/REVIEWER_TEST_PLAN.md)
+- [v0.2 GitHub Issue Connector Plan](docs/V0_2_GITHUB_ISSUE_CONNECTOR_PLAN.md)
 
