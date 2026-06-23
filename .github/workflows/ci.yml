@@ -11,6 +11,9 @@ jobs:
 
     env:
       PYTHONPATH: ${{ github.workspace }}
+      OPSAGENT_LLM_PROVIDER: mock
+      OPSAGENT_REPORT_DIR: ${{ github.workspace }}/data/reports
+      OPSAGENT_STATE_DIR: ${{ github.workspace }}/data/state
 
     steps:
       - uses: actions/checkout@v4
@@ -23,6 +26,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
+
+      - name: Prepare writable data dirs
+        run: |
+          mkdir -p data/reports data/state
 
       - name: Lint
         run: ruff check app tests

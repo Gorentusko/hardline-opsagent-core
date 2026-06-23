@@ -1,4 +1,4 @@
-import os
+﻿import os
 from dataclasses import dataclass
 
 
@@ -20,8 +20,9 @@ class Settings:
     max_input_chars: int = int(os.getenv("OPSAGENT_MAX_INPUT_CHARS", "12000"))
     llm_timeout_seconds: int = int(os.getenv("OPSAGENT_LLM_TIMEOUT_SECONDS", "45"))
 
-    report_dir: str = os.getenv("OPSAGENT_REPORT_DIR", "/app/data/reports")
-    state_dir: str = os.getenv("OPSAGENT_STATE_DIR", "/app/data/state")
+    report_dir: str = os.getenv("OPSAGENT_REPORT_DIR", "data/reports")
+    state_dir: str = os.getenv("OPSAGENT_STATE_DIR", "data/state")
 
 
 settings = Settings()
+
