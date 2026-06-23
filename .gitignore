@@ -8,3 +8,6 @@ data/state/*
 !data/reports/.gitkeep
 !data/state/.gitkeep
 .DS_Store
+
+# Local environment backups
+.env.backup.*
