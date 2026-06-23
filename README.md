@@ -1,5 +1,12 @@
-# Hardline OpsAgent Core
+﻿# Hardline OpsAgent Core
 
+---
+
+## Dashboard Preview
+
+![Hardline OpsAgent Core dashboard](docs/images/dashboard-v0.1.5.png)
+
+The dashboard shows service health, the active AI provider, report generation, and Markdown ops reports in one local Docker demo.
 ![CI](https://github.com/Gorentusko/hardline-opsagent-core/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![Docker](https://img.shields.io/badge/docker-compose-blue)
@@ -185,4 +192,5 @@ See [`SECURITY.md`](SECURITY.md).
 ## License
 
 MIT License. See [`LICENSE`](LICENSE).
+
 

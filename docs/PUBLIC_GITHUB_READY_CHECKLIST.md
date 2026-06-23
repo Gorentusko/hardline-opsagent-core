@@ -1,4 +1,4 @@
-# Public GitHub Ready Checklist
+﻿# Public GitHub Ready Checklist
 
 ## Current status
 
@@ -58,8 +58,9 @@ platform-engineering
 
 ## Before sharing widely
 
-- [ ] Add screenshot to README
+- [x] Add screenshot to README
 - [ ] Add a short demo GIF or screen capture
 - [ ] Create v0.1.4 GitHub release
 - [ ] Pin repo on GitHub profile
+
 
