@@ -199,3 +199,26 @@ MIT License. See [`LICENSE`](LICENSE).
 - [Reviewer Test Plan](docs/REVIEWER_TEST_PLAN.md)
 - [v0.2 GitHub Issue Connector Plan](docs/V0_2_GITHUB_ISSUE_CONNECTOR_PLAN.md)
 
+## v0.2 GitHub Issue Connector
+
+Hardline OpsAgent Core can now preview a GitHub issue from the latest generated report.
+
+Safe defaults:
+
+```env
+OPSAGENT_GITHUB_ENABLED=false
+OPSAGENT_GITHUB_DRY_RUN=true
+```
+
+Endpoints:
+
+```text
+GET  /issues/status
+POST /issues/dry-run
+POST /issues/create
+```
+
+Issue creation is blocked unless explicitly enabled, dry-run is disabled, a repository is configured, and a user-provided GitHub token is present.
+
+See [v0.2 GitHub Issue Connector](docs/V0_2_GITHUB_ISSUE_CONNECTOR.md).
+

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 
@@ -12,9 +12,11 @@ from app.config import settings
 from app.evaluators.rules import evaluate_state
 from app.llm.providers import get_provider
 from app.reports.markdown import build_prompt, write_report
+from app.routes.issues import router as issues_router
 from app.ui.dashboard import dashboard_html
 
 app = FastAPI(title=settings.app_name)
+app.include_router(issues_router)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -28,13 +30,12 @@ def api_metadata():
         "app": settings.app_name,
         "mode": settings.env,
         "llm_provider": settings.llm_provider,
-        "message": "Use /health, /state, /analyze, /reports, or browser dashboard at /.",
+        "message": "Use /health, /state, /analyze, /reports, /issues/status, or dashboard at /.",
     }
 
 
 @app.get("/favicon.ico")
 def favicon():
-    # Tiny inline SVG favicon. Keeps browser logs clean without shipping binary assets.
     svg = """<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
     <rect width='64' height='64' rx='14' fill='#0b1020'/>
     <path d='M14 34h9l5-16 8 28 5-12h9' fill='none' stroke='#3b82f6' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/>
@@ -101,4 +102,3 @@ def read_report(name: str):
 
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host=settings.bind_host, port=settings.bind_port, reload=False)
-

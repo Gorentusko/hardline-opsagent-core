@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 
 def dashboard_html() -> str:
@@ -20,8 +20,13 @@ def dashboard_html() -> str:
     .ok { color: #22c55e; }
     .warn { color: #f59e0b; }
     .bad { color: #ef4444; }
-    button { background: #2563eb; border: 0; color: white; font-weight: 700; padding: 12px 16px; border-radius: 10px; cursor: pointer; }
+    button { background: #2563eb; border: 0; color: white; font-weight: 700; padding: 12px 16px; border-radius: 10px; cursor: pointer; margin: 4px 6px 4px 0; }
     button:hover { background: #1d4ed8; }
+    button.secondary { background: #334155; }
+    button.secondary:hover { background: #475569; }
+    button.danger { background: #7f1d1d; }
+    button.danger:hover { background: #991b1b; }
+    code { color: #bfdbfe; }
     pre { white-space: pre-wrap; background: #020617; color: #dbeafe; padding: 16px; border-radius: 12px; border: 1px solid #1e293b; overflow-x: auto; }
     a { color: #93c5fd; }
     .muted { color: #94a3b8; font-size: 13px; }
@@ -30,7 +35,7 @@ def dashboard_html() -> str:
 <body>
 <header>
   <h1>Hardline OpsAgent Core</h1>
-  <p>Docker-deployable AI operations assistant. Mock/offline by default. Turn system and container state into health reports, runbooks, and proof.</p>
+  <p>Docker-deployable AI operations assistant. Mock/offline by default. Turn system and container state into health reports, runbooks, tickets, and proof.</p>
 </header>
 <main>
   <div class="grid">
@@ -49,6 +54,13 @@ def dashboard_html() -> str:
       <p>Generated reports are stored in <code>data/reports</code> and can be opened below.</p>
       <button onclick="loadReports()">Refresh reports</button>
       <div id="reports"></div>
+    </section>
+    <section class="card">
+      <h2>GitHub Issues</h2>
+      <p>Create a GitHub issue from the latest report. Safe dry-run mode is the default.</p>
+      <p id="issueStatus" class="muted">issue connector unknown</p>
+      <button class="secondary" onclick="issueDryRun()">Preview issue</button>
+      <button class="danger" onclick="issueCreate()">Create issue</button>
     </section>
   </div>
 
@@ -71,6 +83,17 @@ async function checkHealth() {
   }
 }
 
+async function checkIssueStatus() {
+  try {
+    const res = await fetch('/issues/status');
+    const data = await res.json();
+    document.getElementById('issueStatus').textContent =
+      'enabled=' + data.enabled + ' dry_run=' + data.dry_run + ' repo_configured=' + data.repo_configured;
+  } catch (e) {
+    document.getElementById('issueStatus').textContent = 'issue connector offline';
+  }
+}
+
 async function runAnalyze() {
   document.getElementById('output').textContent = 'Running analysis...';
   const res = await fetch('/analyze');
@@ -90,9 +113,24 @@ async function loadReports() {
   box.innerHTML = '<ul>' + data.reports.map(r => `<li><a href="/reports/${r.name}" target="_blank">${r.name}</a></li>`).join('') + '</ul>';
 }
 
+async function issueDryRun() {
+  document.getElementById('output').textContent = 'Building issue preview...';
+  const res = await fetch('/issues/dry-run', {method: 'POST'});
+  const data = await res.json();
+  document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+}
+
+async function issueCreate() {
+  document.getElementById('output').textContent = 'Requesting issue creation...';
+  const res = await fetch('/issues/create', {method: 'POST'});
+  const data = await res.json();
+  document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+  await checkIssueStatus();
+}
+
 checkHealth();
+checkIssueStatus();
 loadReports();
 </script>
 </body>
 </html>"""
-
